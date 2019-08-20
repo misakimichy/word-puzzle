@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
-    var string = "Believe you can and you're halfway there. Theodore Roosevelt";
+    var string = $("#convert-this").text();
     var sentences = string.split('');
-    console.log("split sentenes:", sentences);
+    console.log("split sentences:", sentences);
     var vowels = ['a', 'i', 'e', 'o', 'u'];
     var array = [];
     for (var i = 0; i < sentences.length; i++) {
