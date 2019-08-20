@@ -1,5 +1,10 @@
-h1, h2 {
+h1, h2, p {
   text-align: center;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
 }
 
 #result {

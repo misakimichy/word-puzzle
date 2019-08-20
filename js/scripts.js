@@ -10,13 +10,11 @@ $(document).ready(function(){
       for (var j = 0; j < vowels.length; j++) {
         if(sentences[i] === vowels[j]) {
           sentences[i] = '-';
-          array.push(sentences[i]);
         }
       }
       array.push(sentences[i]);
     }
-
-    console.log("array:", array);
     $("#result").show();
+    $("#result-sentence").text(array.join(''));
   });
 });
